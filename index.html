@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat Application</title>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js "></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js "></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js "></script>
+
+  <!-- Emoji Picker -->
+  <link href="https://cdn.jsdelivr.net/npm/ @joeattardi/emoji-button@3.0.1/dist/css/emoji-button.min.css" rel="stylesheet">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ @joeattardi/emoji-button@3.0.1/dist/index.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Login Screen -->
+  <div id="loginScreen" class="centered">
+    <h2>Welcome to Chat App</h2>
+    <input type="text" id="usernameInput" placeholder="Choose a username" />
+    <button onclick="saveUsername()">Join Chat</button>
+  </div>
+
+  <!-- Chat Interface -->
+  <div id="chatScreen" class="hidden">
+    <div class="chat-container">
+      <aside class="sidebar">
+        <h3>Rooms</h3>
+        <ul id="roomList">
+          <li onclick="joinRoom('General')">General</li>
+        </ul>
+        <input type="text" id="newRoom" placeholder="New Room Name" />
+        <button onclick="createRoom()">Create Room</button>
+      </aside>
+
+      <main class="chat-area">
+        <section id="messages" class="message-box"></section>
+        <footer class="input-area">
+          <input type="text" id="messageInput" placeholder="Type a message..." />
+          <button id="emojiButton">😊</button>
+          <button onclick="sendMessage()">Send</button>
+        </footer>
+      </main>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
