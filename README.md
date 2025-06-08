@@ -1,5 +1,4 @@
- 💬 RealTime Chat Application
-
+💬 RealTime Chat Application
 A realtime, multiuser chat application built using HTML, CSS, and JavaScript, with WebSocket communication powered by Socket.IO. Users can join or create chat rooms, send messages instantly, and see who sent each message along with timestamps.
 
  🎯 Objective
