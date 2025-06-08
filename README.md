@@ -58,7 +58,9 @@ node server.js
 3. Open in Your Browser
 Go to:
 http://localhost:3000
+
 You can open multiple tabs/windows to simulate different users chatting in realtime.
+
 📁 Folder Structure
 chatapp/
 │
@@ -68,42 +70,61 @@ chatapp/
 ├── client.js          ← Clientside logic using Socket.IO
 ├── server.js          ← Node.js + Express + Socket.IO backend
 └── README.md          ← You are here!
+
 🧾 Requirements Met
+
 Intuitive and visually appealing UI ✅
 Uses modern design with glassmorphism, shadows, and transitions
+
 Chat room interface ✅
 Includes room list, message area, input field
+
 Responsive design✅
 Works perfectly on mobile, tablet, and desktop
+
 Realtime communication✅
 Powered by WebSocket using Socket.IO
+
 Join specific chat room✅
 Users can select or create a room
+
 Messages appear in realtime✅
 DOM updated dynamically via events
+
 Username selection✅
 Enforced before entering chat
+
 No impersonation/same username✅
 Basic enforcement on frontend
+
 Send text messages✅
 Input box allows sending messages
+
 Show sender & timestamp✅
 Each message displays username and local time
+
 Basic text formatting  ✅
 Supportsitalic,_italic_,bold
+
 Create/join chat rooms✅
 Room management included
+
 Online users list✅
 Shows who's currently in the room
+
 Smooth scrolling & notifications✅
 Autoscrolls on new message; browser tab flashes on new message
+
 Input validation✅
 Prevents empty messages
 Local storage / persistence
+
 ⚠️ Optional
 Not implemented (can be added later)
+
 Security considerations✅
 Sanitizes output to prevent XSS
+
 Edge cases handled✅
 Handles disconnects, empty messages, room switching
 
