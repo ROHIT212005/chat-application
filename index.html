@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-bg">
+  <div class="login-container">
+    <h2>Join the Chat</h2>
+    <input type="text" id="username" placeholder="Enter your username" required/>
+    <select id="roomSelect"></select>
+    <button onclick="createRoom()">Create New Room</button>
+    <button onclick="joinChat()">Join Chat</button>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
